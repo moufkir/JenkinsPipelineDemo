@@ -1,0 +1,36 @@
+pipeline {
+  agent
+  stages {
+    stage ('Initialize') {
+      steps {
+        echo 'Hello Man Initialization Phase ...'
+      }
+    }
+    stage ('Build') {
+      steps {
+        echo ' Phase ...'
+      }
+    }
+    stage ('Deploy') {
+      steps {
+        echo 'Deployement Phase ...'
+      }
+     }
+    stage ('Test') {
+      steps {
+        echo 'Testing Phase ...'
+      }
+    }
+    stage ('Release') {
+      steps {
+        echo 'Releasing Phase ...'
+      }
+    }
+    stage ('Greeting') {
+      steps {
+        echo 'That was cool man End of Process Phase ...'
+      }
+    }
+
+  }
+}
